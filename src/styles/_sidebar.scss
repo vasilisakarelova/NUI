@@ -1,0 +1,11 @@
+.sidebar {
+  position: relative;
+  display: none;
+  background-color: #fff;
+
+  @media screen and (min-width: $tablet-landscape-up) {
+    display: inline-block;
+    width: 25vw;
+    height: 100%;
+  }
+}

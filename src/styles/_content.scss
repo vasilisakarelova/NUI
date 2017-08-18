@@ -1,0 +1,10 @@
+.content {
+  position: relative;
+  min-height: 100vh;
+  background-color: #EFE6DF;
+
+  @media screen and (min-width: $tablet-landscape-up) {
+    width: 75vw;
+    height: 100%;
+  }
+}

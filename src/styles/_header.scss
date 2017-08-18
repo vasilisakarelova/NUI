@@ -1,0 +1,28 @@
+.header {
+  background-color: #fff;
+  position: relative;
+  min-height: 50px;
+  padding: 3vw 3.5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: $tablet-landscape-up) {
+    display: none;
+  }
+}
+
+.logo-wrap {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.arrow-menu-btn {
+  position: relative;
+  display: inline-block;
+  float: right;
+  cursor: pointer;
+}
