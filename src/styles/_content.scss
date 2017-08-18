@@ -4,6 +4,7 @@
   background-color: #EFE6DF;
 
   @media screen and (min-width: $tablet-landscape-up) {
+    display: inline-block;
     width: 75vw;
     height: 100%;
   }
