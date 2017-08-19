@@ -5,4 +5,5 @@ The set of components like checkboxes, forms, maps, and many other *sugar* compo
 
 #hug
 
+<br /><br /><br />
 [check out project page](http://vasilisakarelova.github.io/NUI)
