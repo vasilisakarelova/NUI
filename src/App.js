@@ -22,6 +22,8 @@ class App extends Component {
   componentDidMount() {
     const self = this
 
+    page.base('/NUI')
+    
     page('/', (ctx) => {
       page.redirect('/principles');
     })
