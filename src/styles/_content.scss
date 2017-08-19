@@ -1,11 +1,13 @@
 .content {
   position: relative;
-  min-height: 100vh;
-  background-color: #EFE6DF;
 
   @media screen and (min-width: $tablet-landscape-up) {
-    display: inline-block;
-    width: 75vw;
-    height: 100%;
+    order: 2;
+    width: calc(100% - 405px);
+    height: auto;
   }
+}
+
+.content-headline {
+  margin: 0;
 }
