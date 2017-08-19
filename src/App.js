@@ -14,7 +14,8 @@ class App extends Component {
     super(props)
 
     this.state = {
-      container: null
+      container: null,
+      path: null
     }
   }
 
@@ -22,28 +23,30 @@ class App extends Component {
     const self = this
 
     page('/', (ctx) => {
-      self.setState({
-        container: <Principles />
-      })
+      page.redirect('/principles');
     })
     page('/base', (ctx) => {
       self.setState({
-        container: <Base />
+        container: <Base />,
+        path: ctx.path
       })
     })
     page('/principles', (ctx) => {
       self.setState({
-        container: <Principles />
+        container: <Principles />,
+        path: ctx.path
       })
     })
     page('/using', (ctx) => {
       self.setState({
-        container: <Using />
+        container: <Using />,
+        path: ctx.path
       })
     })
     page('/components', (ctx) => {
       self.setState({
-        container: <Components />
+        container: <Components />,
+        path: ctx.path
       })
     })
     page()
@@ -53,7 +56,7 @@ class App extends Component {
     return (
       <div className='wrap'>
         <Footer />
-        <Menu type={'is-desktop'}/>
+        <Menu type={'is-desktop'} currentPage={this.state.path} />
         { this.state.container }
       </div>
     )

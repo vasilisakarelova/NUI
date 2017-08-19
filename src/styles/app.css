@@ -155,7 +155,7 @@ body {
     text-decoration: none; }
 
 .is-active {
-  text-decoration: line-through; }
+  text-decoration: line-through !important; }
 
 .content {
   position: relative; }

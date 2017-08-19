@@ -7,7 +7,13 @@ export default (props) => {
     page(props.to)
   }
 
+  let classes = props.className
+
+  if (props.currentPage === props.to) {
+    classes += ' is-active'
+  }
+
   return (
-    <a href={ props.to } className={ props.className } onClick={ handleClick }>{ props.children }</a>
+    <a href={ props.to } className={ classes } onClick={ handleClick }>{ props.children }</a>
   )
 }
