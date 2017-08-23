@@ -21,10 +21,6 @@ class Components extends Component {
     return (
       <div className='content conmponents'>
         <h1 className='content-headline' >Components</h1>
-        <Link to="/components/buttons" className='sub-headline'>Buttons</Link>
-        <Link to="/components/fields" className='sub-headline'>Fields</Link>
-        <Link to="/components/controls" className='sub-headline'>Controls</Link>
-        <Link to="/components/additional" className='sub-headline'>Additional</Link>
         { category }
       </div>
     )

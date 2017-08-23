@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class subAdditional extends Component {
   render() {
     return (
-      <h2 className='content-headline' >Additional</h2>
+      <span className='sub-headline'>Additional</span>
     )
   }
 }
