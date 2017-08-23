@@ -4,7 +4,7 @@ import Link from './Link'
 
 class Menu extends Component {
   handleClick(ev) {
-    const menu = document.querySelector('.footer-container')
+    const menu = document.querySelector('.header-container')
     const menubtn = document.querySelector('.menu-btn .arrow')
 
     switch(menu.classList.contains('is-open')) {

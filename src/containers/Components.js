@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 
-import Link from '../components/Link'
-
 import Buttons from './Buttons'
 import Fields from './Fields'
 import Controls from './Controls'
