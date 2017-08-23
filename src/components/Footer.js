@@ -14,9 +14,9 @@ class Footer extends Component {
             <p className='footer-text'>States for No Ugly Interface. The set of components like checkboxes, forms, maps, and many other sugar components for your pleasure. <br />Keep it simple and non-ugly.</p>
           </div>
           <div className='footer-links'>
-            <a className='header-links' href='https://github.com/vasilisakarelova/NUI'>GitHub</a>
-            <a className='header-links' href='https://github.com/vasilisakarelova/NUI'>Download</a>
-            <span className='header-year'>2017</span>
+            <span className='footer-year'>2017</span>
+            <a className='footer-link' href='https://github.com/vasilisakarelova/NUI'>GitHub</a>
+            <a className='footer-link' href='https://github.com/vasilisakarelova/NUI'>Download</a>
           </div>
         </div>
       </div>

@@ -224,7 +224,8 @@ body {
   padding: 0 20px 20px;
   z-index: 999;
   height: 180px;
-  width: 60vh;
+  width: 65vh;
+  max-width: 800px;
   top: 0;
   right: 0;
   transform: translateX(-200px) rotate(-90deg);
@@ -255,3 +256,16 @@ body {
   position: relative;
   display: block;
   order: 2; }
+
+.footer-year {
+  display: inline-block;
+  padding-right: 20px; }
+
+.footer-link {
+  display: inline-block;
+  padding: 0 20px; }
+  .footer-link:first-child {
+    padding-left: 0; }
+  .footer-link:link, .footer-link:active, .footer-link:visited {
+    color: inherit;
+    text-decoration: none; }
