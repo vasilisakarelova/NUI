@@ -128,6 +128,11 @@ body {
       .menu.is-mobile {
         display: none; } }
 
+@media screen and (min-width: 991px) {
+  .menu-wrap {
+    margin: 0 20px;
+    border-left: 1px solid #000; } }
+
 .menu-link-wrap {
   position: relative;
   display: block; }
@@ -140,15 +145,21 @@ body {
   .menu-link:link, .menu-link:active, .menu-link:visited {
     color: inherit;
     text-decoration: none; }
+  @media screen and (min-width: 991px) {
+    .menu-link {
+      margin: 0 15px; } }
 
 .sub-menu {
   display: block;
-  padding: 0 25px; }
+  margin: 0 20px; }
+  @media screen and (min-width: 991px) {
+    .sub-menu {
+      border-left: 1px solid #000; } }
 
 .sub-menu-link {
   position: relative;
   display: inline-block;
-  margin: 0 25px;
+  margin: 0 15px;
   line-height: 30px;
   color: inherit;
   text-decoration: none; }
