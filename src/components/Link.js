@@ -2,12 +2,12 @@ import React from 'react'
 import page from 'page'
 
 export default (props) => {
+  let classes = props.className
+
   function handleClick(e) {
     e.preventDefault()
     page(props.to)
   }
-
-  let classes = props.className
 
   if (props.currentPage === props.to) {
     classes += ' is-active'
