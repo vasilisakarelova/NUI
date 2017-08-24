@@ -39,16 +39,16 @@
   transition: all .3s linear;
   z-index: 1;
 
-  &.is-open {
-    transform: translateY(50px);
-  }
-
   @media screen and (min-width: $tablet-landscape-up) {
     height: 200px;
     width: 500px;
     transform: translateX(-150px) translateY(50px) rotate(-90deg) !important;
     z-index: 3;
   }
+}
+
+.is-open {
+  transform: translateY(50px);
 }
 
 .header-text {

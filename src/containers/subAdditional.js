@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class subAdditional extends Component {
+class SubAdditional extends Component {
   render() {
     return (
       <span className='sub-headline'>Additional</span>
@@ -8,4 +8,4 @@ class subAdditional extends Component {
   }
 }
 
-export default subAdditional
+export default SubAdditional
