@@ -4,7 +4,9 @@ class Themes extends Component {
   render() {
     return (
       <div className='content base'>
-        <h1 className='content-headline' >Themes</h1>
+        <div className='content-inner'>
+          <h1 className='content-headline' >Themes</h1>
+        </div>
       </div>
     )
   }

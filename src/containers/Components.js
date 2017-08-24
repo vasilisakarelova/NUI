@@ -41,8 +41,10 @@ class Components extends Component {
   render() {
     return (
       <div className='content conmponents'>
-        <h1 className='content-headline' >Components</h1>
-        { this.state.subCategory }
+        <div className='content-inner'>
+          <h1 className='content-headline' >Components</h1>
+          { this.state.subCategory }
+        </div>
       </div>
     )
   }

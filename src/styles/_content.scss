@@ -17,6 +17,24 @@
   font-weight: black;
 }
 
+.content-inner {
+  width: 50vw;
+}
+
+.content-p {
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.content-nav {
+  position: relative;
+  display: block;
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .sub-headline {
   position: relative;
   display: block;
@@ -54,4 +72,13 @@
         height .3s ease-out .75s;
     }
   }
+}
+
+.section {
+  margin: 40px 0;
+  line-height: 25px;
+}
+
+.section-healine {
+  text-transform: uppercase;
 }

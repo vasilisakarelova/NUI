@@ -39,8 +39,10 @@ class Base extends Component {
   render() {
     return (
       <div className='content base'>
-        <h1 className='content-headline' >Base</h1>
-        { this.state.subCategory }
+        <div className='content-inner'>
+          <h1 className='content-headline' >Base</h1>
+          { this.state.subCategory }
+        </div>
       </div>
     )
   }

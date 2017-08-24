@@ -4,7 +4,9 @@ class Additional extends Component {
   render() {
     return (
       <div className='content base'>
-        <h1 className='content-headline' >Additional</h1>
+        <div className='content-inner'>
+          <h1 className='content-headline' >Additional</h1>
+        </div>
       </div>
     )
   }
