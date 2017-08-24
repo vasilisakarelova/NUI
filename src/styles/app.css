@@ -7,8 +7,7 @@ body {
   padding: 0;
   cursor: default;
   font-family: 'Muli', sans-serif;
-  font-size: 16px;
-  overflow: hidden; }
+  font-size: 16px; }
 
 #root {
   position: relative;
