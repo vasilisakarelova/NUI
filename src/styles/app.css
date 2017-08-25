@@ -110,7 +110,7 @@ body {
 .menu {
   color: #000;
   height: auto;
-  padding: 10px 0;
+  padding: 20px 0;
   left: 0;
   z-index: 1; }
   .menu.is-desktop {
@@ -188,7 +188,7 @@ body {
 
 .content {
   position: relative;
-  padding: 20px 25px; }
+  padding: 20px 0; }
   @media screen and (min-width: 991px) {
     .content {
       order: 2;
@@ -222,7 +222,7 @@ body {
   position: relative;
   display: block;
   border-bottom: 0;
-  margin-top: 20px;
+  margin-top: 40px;
   padding-bottom: 5px;
   color: inherit;
   font-size: 24px;

@@ -1,6 +1,6 @@
 .content {
   position: relative;
-  padding: 20px 25px;
+  padding: 20px 0;
 
   @media screen and (min-width: $tablet-landscape-up) {
     order: 2;
@@ -41,7 +41,7 @@
   position: relative;
   display: block;
   border-bottom: 0; //1px solid #000;
-  margin-top: 20px;
+  margin-top: 40px;
   padding-bottom: 5px;
   color: inherit;
   font-size: 24px;
