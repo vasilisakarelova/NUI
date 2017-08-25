@@ -15,7 +15,7 @@ class Using extends Component {
               <span>npm install nui</span><br />
               <span>bower install nui</span><br />
               <br />
-              <p>If you are not familiar with package managers, you can just download it by clicking <i>here</i>, or alternatively, go to our GitHub page and clone the latest release to your project folder.
+              <p>If you are not familiar with package managers, you can just download it by clicking <i><a className='content-link' href='http://github.com/vasilisakarelova/NUI'>here</a></i>, or alternatively, go to our GitHub page and clone the latest release to your project folder.
   After that unzip the file and make you sure you keep <i>nui.min.js</i> and <i>nui.min.css</i> in your project folder.</p>
             </div>
             <div className='section'>

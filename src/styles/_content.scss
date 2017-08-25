@@ -18,7 +18,9 @@
 }
 
 .content-inner {
-  width: 50vw;
+  @media screen and (min-width: $tablet-landscape-up) {
+    width: 50vw;
+  }
 }
 
 .content-p {
@@ -56,7 +58,7 @@
   }
 
   &.underline {
-    transition: color .3s;
+    transition: color .5s;
 
     &:after {
       border-bottom: 1px solid transparent;
@@ -68,8 +70,8 @@
       border-left-color: #000;
       transition:
         border-color 0s ease-out .3s,
-        width .3s ease-out .3s,
-        height .3s ease-out .75s;
+        width .5s ease-out .3s,
+        height .5s ease-out .3s;
     }
   }
 }
@@ -81,4 +83,13 @@
 
 .section-healine {
   text-transform: uppercase;
+}
+
+.content-link {
+  &:link,
+  &:active,
+  &:visited {
+    color: inherit;
+    text-decoration: none;
+  }
 }
