@@ -4,8 +4,8 @@ import page from 'page'
 export default (props) => {
   let classes = props.className
 
-  function handleClick(e) {
-    e.preventDefault()
+  function handleClick(ev) {
+    ev.preventDefault()
     page(props.to)
   }
 

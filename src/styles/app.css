@@ -144,6 +144,19 @@ body {
   .menu-link:link, .menu-link:active, .menu-link:visited {
     color: inherit;
     text-decoration: none; }
+  .menu-link:hover:after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    animation-name: strike;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; }
   @media screen and (min-width: 991px) {
     .menu-link {
       margin: 0 15px; } }
@@ -162,17 +175,30 @@ body {
   line-height: 30px;
   color: inherit;
   text-decoration: none; }
+  .sub-menu-link:hover:after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    animation-name: strike;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; }
 
 .is-active:after {
   content: ' ';
   position: absolute;
-  top: calc(50% + 2px);
+  top: 50%;
   left: 0;
   width: 100%;
   height: 1px;
   background-color: #000;
   animation-name: strike;
-  animation-duration: .5s;
+  animation-duration: .3s;
   animation-timing-function: linear;
   animation-iteration-count: 1;
   animation-fill-mode: forwards; }

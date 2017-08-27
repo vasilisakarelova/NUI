@@ -1,3 +1,20 @@
+@mixin link-anim {
+  &:after{
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    animation-name: strike;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+}
+
 .menu {
   color: #000;
   height: auto;
@@ -52,6 +69,10 @@
     text-decoration: none;
   }
 
+  &:hover {
+    @include link-anim;
+  }
+
   @media screen and (min-width: $tablet-landscape-up) {
     margin: 0 15px;
   }
@@ -73,23 +94,14 @@
   line-height: 30px;
   color: inherit;
   text-decoration: none;
+
+  &:hover {
+    @include link-anim;
+  }
 }
 
 .is-active {
-  &:after{
-    content: ' ';
-    position: absolute;
-    top: calc(50% + 2px);
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #000;
-    animation-name: strike;
-    animation-duration: .5s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-  }
+  @include link-anim;
 }
 
 @keyframes strike {
