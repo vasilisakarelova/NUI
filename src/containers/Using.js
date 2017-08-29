@@ -35,13 +35,13 @@ class Using extends Component {
       <div className='content using'>
         <div className='content-inner'>
           <h1 className='content-headline' >Using</h1>
-          <span className='content-menu'>
-            <Link to='/using/download' currentPage='/using' className='content-link'>Download</Link> /
-            <Link to='/using/starter-template' currentPage='/using' className='content-link'> Starter template</Link> /
-            <Link to='/using/css' currentPage='/using' className='content-link'> css</Link> /
-            <Link to='/using/js' currentPage='/using' className='content-link'> js</Link> /
-            <Link to='/using/example' currentPage='/using' className='content-link'> Using</Link>
-          </span>
+          <div className='content-menu'>
+            <Link to='/using/download' currentPage={this.props.currentPage} className='content-link'>Download</Link> /
+            <Link to='/using/starter-template' currentPage={this.props.currentPage} className='content-link'> Starter template</Link> /
+            <Link to='/using/css' currentPage={this.props.currentPage} className='content-link'> css</Link> /
+            <Link to='/using/js' currentPage={this.props.currentPage} className='content-link'> js</Link> /
+            <Link to='/using/example' currentPage={this.props.currentPage} className='content-link'> Using</Link>
+          </div>
           <div className='sections'>
             { this.state.subCategory }
           </div>

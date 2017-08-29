@@ -91,7 +91,18 @@
 }
 
 .content-link {
+  position: relative;
+  display: inline-block;
   line-height: 20px;
+
+  &:before{
+    content: ' ';
+    display: inline-block;
+  }
+
+  &:hover {
+    @include link-anim;
+  }
 
   &:link,
   &:active,

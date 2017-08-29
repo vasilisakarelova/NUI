@@ -4,7 +4,7 @@
     position: absolute;
     top: 52.5%;
     left: 0;
-    width: 100%;
+    width: calc(100% + 3px);
     height: 1px;
     background-color: #000;
     animation-name: strike;

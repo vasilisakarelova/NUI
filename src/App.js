@@ -46,31 +46,31 @@ class App extends Component {
     })
     page('/using/download', (ctx) => {
       self.setState({
-        container: <Using subCategory='download' />,
+        container: <Using subCategory='download' currentPage='/using/download' />,
         path: '/using'
       })
     })
     page('/using/starter-template', (ctx) => {
       self.setState({
-        container: <Using subCategory='starter-template' />,
+        container: <Using subCategory='starter-template' currentPage='/using/starter-template'/>,
         path: '/using'
       })
     })
     page('/using/css', (ctx) => {
       self.setState({
-        container: <Using subCategory='css' />,
+        container: <Using subCategory='css' currentPage='/using/css'/>,
         path: '/using'
       })
     })
     page('/using/js', (ctx) => {
       self.setState({
-        container: <Using subCategory='js' />,
+        container: <Using subCategory='js' currentPage='/using/js'/>,
         path: '/using'
       })
     })
     page('/using/example', (ctx) => {
       self.setState({
-        container: <Using subCategory='example' />,
+        container: <Using subCategory='example' currentPage='/using/example'/>,
         path: '/using'
       })
     })
@@ -144,15 +144,6 @@ class App extends Component {
     })
     page()
 
-    /*document.querySelectorAll('.menu').forEach( el => {
-      switch (el.classList.contains('is-mobile')) {
-        case true:
-          el.querySelectorAll('.')
-          break
-        case false:
-        break
-      }
-    })*/
   }
 
   render() {
