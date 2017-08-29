@@ -84,7 +84,15 @@
   text-transform: uppercase;
 }
 
+.content-menu {
+  position: relative;
+  display: block;
+  margin-top: 40px;
+}
+
 .content-link {
+  line-height: 20px;
+
   &:link,
   &:active,
   &:visited {

@@ -279,9 +279,16 @@ body {
 .section-healine {
   text-transform: uppercase; }
 
-.content-link:link, .content-link:active, .content-link:visited {
-  color: inherit;
-  text-decoration: none; }
+.content-menu {
+  position: relative;
+  display: block;
+  margin-top: 40px; }
+
+.content-link {
+  line-height: 20px; }
+  .content-link:link, .content-link:active, .content-link:visited {
+    color: inherit;
+    text-decoration: none; }
 
 .footer-wrap {
   display: none;

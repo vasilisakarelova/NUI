@@ -42,6 +42,37 @@ class App extends Component {
         container: <Using />,
         path: ctx.path
       })
+      page.redirect('/using/download')
+    })
+    page('/using/download', (ctx) => {
+      self.setState({
+        container: <Using subCategory='download' />,
+        path: '/using'
+      })
+    })
+    page('/using/starter-template', (ctx) => {
+      self.setState({
+        container: <Using subCategory='starter-template' />,
+        path: '/using'
+      })
+    })
+    page('/using/css', (ctx) => {
+      self.setState({
+        container: <Using subCategory='css' />,
+        path: '/using'
+      })
+    })
+    page('/using/js', (ctx) => {
+      self.setState({
+        container: <Using subCategory='js' />,
+        path: '/using'
+      })
+    })
+    page('/using/example', (ctx) => {
+      self.setState({
+        container: <Using subCategory='example' />,
+        path: '/using'
+      })
     })
     page('/base', (ctx) => {
       self.setState({

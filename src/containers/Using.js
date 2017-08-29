@@ -1,35 +1,49 @@
 import React, { Component } from 'react'
 
+import Link from '../components/Link'
+import Download from './Download'
+import StarterTemplate from './StarterTemplate'
+import Css from './Css'
+import Js from './JS'
+import UsingExample from './UsingExample'
+
+const views = {
+  'download': <Download />,
+  'starter-template': <StarterTemplate />,
+  'css': <Css />,
+  'js': <Js />,
+  'example': <UsingExample />
+}
+
 class Using extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      subCategory: views[props.subCategory]
+    }
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.setState({
+      subCategory: views[nextProps.subCategory]
+    })
+  }
+
   render() {
     return (
       <div className='content using'>
         <div className='content-inner'>
           <h1 className='content-headline' >Using</h1>
+          <span className='content-menu'>
+            <Link to='/using/download' currentPage='/using' className='content-link'>Download</Link> /
+            <Link to='/using/starter-template' currentPage='/using' className='content-link'> Starter template</Link> /
+            <Link to='/using/css' currentPage='/using' className='content-link'> css</Link> /
+            <Link to='/using/js' currentPage='/using' className='content-link'> js</Link> /
+            <Link to='/using/example' currentPage='/using' className='content-link'> Using</Link>
+          </span>
           <div className='sections'>
-            <div className='section'>
-              <span className='section-healine'>download</span>
-              <p>One of the NUI’s advatage is simplicity in using and installing it. We made sure that you’ll have a possibility to add some personal touch to NUI components easily and spend as less time as possible in adding them to the web page. Here is how you can first of all add the NUI to the project:</p>
-              <br />
-              <span>yarn add nui (our personal choise)</span><br />
-              <span>npm install nui</span><br />
-              <span>bower install nui</span><br />
-              <br />
-              <p>If you are not familiar with package managers, you can just download it by clicking <i><a className='content-link' href='http://github.com/vasilisakarelova/NUI'>here</a></i>, or alternatively, go to our GitHub page and clone the latest release to your project folder.
-  After that unzip the file and make you sure you keep <i>nui.min.js</i> and <i>nui.min.css</i> in your project folder.</p>
-            </div>
-            <div className='section'>
-              <span className='section-healine'>starter template</span>
-            </div>
-            <div className='section'>
-              <span className='section-healine'>css</span>
-            </div>
-            <div className='section'>
-              <span className='section-healine'>js</span>
-            </div>
-            <div className='section'>
-              <span className='section-healine'>using</span>
-            </div>
+            { this.state.subCategory }
           </div>
         </div>
       </div>
