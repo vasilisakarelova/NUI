@@ -3,6 +3,7 @@
   flex-grow: 1;
 
   @media screen and (min-width: $tablet-landscape-up) {
+    padding: 30px 40px 30px 20px;
     order: 2;
   }
 }
@@ -17,7 +18,7 @@
 
 .content-inner {
   @media screen and (min-width: $tablet-landscape-up) {
-    width: 50vw;
+    max-width: 695px;
   }
 }
 
