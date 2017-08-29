@@ -1,11 +1,9 @@
 .content {
-  position: relative;
-  padding: 20px 25px;
+  padding: 30px 20px;
+  flex-grow: 1;
 
   @media screen and (min-width: $tablet-landscape-up) {
     order: 2;
-    width: calc(100% - 405px);
-    height: auto;
   }
 }
 

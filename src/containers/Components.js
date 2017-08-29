@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import Buttons from './Buttons'
 import Fields from './Fields'
 import Controls from './Controls'
-import SubAdditional from './SubAdditional'
+import SubAdditional from './subAdditional'
 
 const views = {
   'buttons': <Buttons />,

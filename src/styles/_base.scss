@@ -19,5 +19,6 @@ body {
 .wrap {
   @media screen and (min-width: $tablet-landscape-up) {
     display: flex;
+    justify-content: space-between;
   }
 }

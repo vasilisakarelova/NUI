@@ -17,7 +17,8 @@ body {
 
 @media screen and (min-width: 991px) {
   .wrap {
-    display: flex; } }
+    display: flex;
+    justify-content: space-between; } }
 
 .header-wrap {
   position: relative;
@@ -91,7 +92,8 @@ body {
   display: block; }
   @media screen and (min-width: 991px) {
     .logo-img {
-      height: 80px; } }
+      height: 80px;
+      flex-grow: 0; } }
 
 .menu-btn {
   float: right;
@@ -212,13 +214,11 @@ body {
     left: 0; } }
 
 .content {
-  position: relative;
-  padding: 20px 25px; }
+  padding: 30px 20px;
+  flex-grow: 1; }
   @media screen and (min-width: 991px) {
     .content {
-      order: 2;
-      width: calc(100% - 405px);
-      height: auto; } }
+      order: 2; } }
 
 .content-headline {
   font-size: 32px;
@@ -286,9 +286,10 @@ body {
 .footer-wrap {
   display: none;
   order: 3;
-  width: 210px;
-  height: auto;
+  width: 140px;
+  position: relative;
   min-height: 100vh;
+  height: auto;
   padding: 0;
   background-color: #fff; }
   @media screen and (min-width: 991px) {
@@ -299,35 +300,35 @@ body {
   position: absolute;
   display: flex;
   flex-direction: column;
-  padding: 0 20px 20px;
   z-index: 999;
-  height: 180px;
-  width: 65vh;
-  max-width: 800px;
+  width: 100vh;
+  min-width: 630px;
+  max-height: 120px;
+  padding: 0 20px;
+  box-sizing: border-box;
   top: 0;
-  right: 0;
-  transform: translateX(-200px) rotate(-90deg);
+  bottom: 0;
+  right: 10px;
+  transform: translateX(-120px) rotate(-90deg);
   transform-origin: right top; }
 
 .footer-content {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  order: 1;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: center; }
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+  display: flex; }
   .footer-content .logo-wrap {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
     z-index: 3;
-    padding: 0 10px 0 0; }
+    padding: 0;
+    padding-right: 15px; }
 
 .footer-text {
   display: inline-block;
-  position: relative;
   vertical-align: top;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  max-width: 500px;
   order: 2; }
 
 .footer-links {
