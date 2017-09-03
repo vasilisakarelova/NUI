@@ -17,11 +17,17 @@ body {
   position: relative;
   display: block;
   min-height: 100vh;
-  background-color: #EFE6DF
+  background-color: #EFE6DF;
+
+  @media screen and (min-width: $tablet-landscape-up) {
+    overflow: hidden;
+    height: 100vh;
+  }
 }
 
 .wrap {
   @media screen and (min-width: $tablet-landscape-up) {
+    height: 100%;
     display: flex;
     justify-content: space-between;
   }

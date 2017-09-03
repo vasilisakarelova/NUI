@@ -5,14 +5,14 @@ import Download from './Download'
 import StarterTemplate from './StarterTemplate'
 import Css from './Css'
 import Js from './JS'
-import UsingExample from './UsingExample'
+import Customize from './Customize'
 
 const views = {
   'download': <Download />,
   'starter-template': <StarterTemplate />,
   'css': <Css />,
   'js': <Js />,
-  'example': <UsingExample />
+  'customize': <Customize />
 }
 
 class Using extends Component {
@@ -40,7 +40,7 @@ class Using extends Component {
             <Link to='/using/starter-template' currentPage={this.props.currentPage} className='content-link'> Starter template</Link> /
             <Link to='/using/css' currentPage={this.props.currentPage} className='content-link'> css</Link> /
             <Link to='/using/js' currentPage={this.props.currentPage} className='content-link'> js</Link> /
-            <Link to='/using/example' currentPage={this.props.currentPage} className='content-link'> Using</Link>
+            <Link to='/using/customize' currentPage={this.props.currentPage} className='content-link'> Customize</Link>
           </div>
           <div className='sections'>
             { this.state.subCategory }

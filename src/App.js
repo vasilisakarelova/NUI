@@ -68,9 +68,9 @@ class App extends Component {
         path: '/using'
       })
     })
-    page('/using/example', (ctx) => {
+    page('/using/customize', (ctx) => {
       self.setState({
-        container: <Using subCategory='example' currentPage='/using/example'/>,
+        container: <Using subCategory='customize' currentPage='/using/customize'/>,
         path: '/using'
       })
     })

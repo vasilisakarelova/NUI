@@ -17,9 +17,14 @@ body {
   display: block;
   min-height: 100vh;
   background-color: #EFE6DF; }
+  @media screen and (min-width: 991px) {
+    #root {
+      overflow: hidden;
+      height: 100vh; } }
 
 @media screen and (min-width: 991px) {
   .wrap {
+    height: 100%;
     display: flex;
     justify-content: space-between; } }
 
@@ -218,7 +223,8 @@ body {
   @media screen and (min-width: 991px) {
     .content {
       padding: 30px 40px 30px 20px;
-      order: 2; } }
+      order: 2;
+      overflow: scroll; } }
 
 .content-headline {
   font-size: 32px;
@@ -229,7 +235,8 @@ body {
 
 @media screen and (min-width: 991px) {
   .content-inner {
-    max-width: 695px; } }
+    max-width: 695px;
+    overflow: scroll; } }
 
 .content-p {
   margin: 40px 0;

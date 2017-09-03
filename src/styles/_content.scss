@@ -5,6 +5,7 @@
   @media screen and (min-width: $tablet-landscape-up) {
     padding: 30px 40px 30px 20px;
     order: 2;
+    overflow: scroll;
   }
 }
 
@@ -19,6 +20,7 @@
 .content-inner {
   @media screen and (min-width: $tablet-landscape-up) {
     max-width: 695px;
+    overflow: scroll;
   }
 }
 
